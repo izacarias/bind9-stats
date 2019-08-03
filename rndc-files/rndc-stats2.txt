@@ -1,0 +1,217 @@
++++ Statistics Dump +++ (1564579081)
+++ Incoming Requests ++
+            35411011 QUERY
+++ Incoming Queries ++
+               14335 RESERVED0
+            27820298 A
+               10953 NS
+                 340 CNAME
+                2561 SOA
+              171053 PTR
+                7672 MX
+                8692 TXT
+             7254351 AAAA
+               63861 SRV
+               51777 NAPTR
+                  42 A6
+                  10 DS
+                   2 RRSIG
+                 121 DNSKEY
+                   8 TLSA
+                  69 SPF
+                3200 ANY
+                 161 Others
+++ Outgoing Queries ++
+[View: default]
+                   8 RESERVED0
+             4412951 A
+               62307 NS
+               72867 CNAME
+                 133 SOA
+                7831 PTR
+                  86 MX
+                4400 TXT
+             1128754 AAAA
+                2609 SRV
+                 369 NAPTR
+              396007 DS
+               22933 DNSKEY
+                  17 ANY
+[View: _bind]
+++ Name Server Statistics ++
+            35301203 IPv4 requests received
+              109808 IPv6 requests received
+              298287 requests with EDNS(0) received
+                1844 TCP requests received
+                3960 recursive queries rejected
+            35308002 responses sent
+                2706 truncated responses sent
+              298270 responses with EDNS(0) sent
+            26063478 queries resulted in successful answer
+             8617027 queries resulted in authoritative answer
+            26602034 queries resulted in non authoritative answer
+                   7 queries resulted in referral answer
+             7345953 queries resulted in nxrrset
+               83476 queries resulted in SERVFAIL
+             1809623 queries resulted in NXDOMAIN
+             3213913 queries caused recursion
+              100041 duplicate queries received
+                2966 queries dropped
+                3960 other query failures
+                   3 recursing clients
+            35403706 UDP queries received
+                1839 TCP queries received
+               57217 Other EDNS option received
+++ Zone Maintenance Statistics ++
+                  22 IPv4 notifies sent
+                  22 IPv6 notifies sent
+                1894 IPv4 SOA queries sent
+                  52 IPv6 SOA queries sent
+                  51 IPv4 IXFR requested
+                  51 transfer requests succeeded
+++ Resolver Statistics ++
+[Common]
+                 484 mismatch responses received
+                   8 UDP queries in progress
+[View: default]
+             4542280 IPv4 queries sent
+             1568992 IPv6 queries sent
+             4407962 IPv4 responses received
+             1548878 IPv6 responses received
+              209194 NXDOMAIN received
+              250076 SERVFAIL received
+                 376 FORMERR received
+                   1 other errors received
+              124080 EDNS(0) query failures
+               61281 truncated responses received
+                 492 lame delegations received
+              821713 query retries
+              155185 query timeouts
+              197704 IPv4 NS address fetches
+              277309 IPv6 NS address fetches
+                1372 IPv4 NS address fetch failed
+              109821 IPv6 NS address fetch failed
+             4458296 DNSSEC validation attempted
+             3749217 DNSSEC validation succeeded
+              708815 DNSSEC NX validation succeeded
+                 217 DNSSEC validation failed
+              178070 queries with RTT < 10ms
+             4016234 queries with RTT 10-100ms
+             1735554 queries with RTT 100-500ms
+               23692 queries with RTT 500-800ms
+                2053 queries with RTT 800-1600ms
+                 125 queries with RTT > 1600ms
+                   8 active fetches
+                  31 bucket size
+               73735 REFUSED received
+[View: _bind]
+                  31 bucket size
+++ Cache Statistics ++
+[View: default]
+            78523017 cache hits
+                 145 cache misses
+            40581015 cache hits (from query)
+             3994683 cache misses (from query)
+                   0 cache records deleted due to memory exhaustion
+             1827371 cache records deleted due to TTL expiration
+               83830 cache database nodes
+               33279 cache database hash buckets
+           241714815 cache tree memory total
+            42590565 cache tree memory in use
+            53470064 cache tree highest memory in use
+             4259840 cache heap memory total
+              959488 cache heap memory in use
+             1016832 cache heap highest memory in use
+[View: _bind (Cache: _bind)]
+                   0 cache hits
+                   0 cache misses
+                   0 cache hits (from query)
+                   0 cache misses (from query)
+                   0 cache records deleted due to memory exhaustion
+                   0 cache records deleted due to TTL expiration
+                   0 cache database nodes
+                  64 cache database hash buckets
+              287392 cache tree memory total
+               29608 cache tree memory in use
+               29608 cache tree highest memory in use
+              262144 cache heap memory total
+                1024 cache heap memory in use
+                1024 cache heap highest memory in use
+++ Cache DB RRsets ++
+[View: default]
+               28441 A
+               26822 NS
+               10986 CNAME
+                 316 PTR
+                   4 MX
+                  13 TXT
+                8326 AAAA
+                   6 SRV
+                   1 NAPTR
+                 992 DS
+                4116 RRSIG
+                1523 NSEC
+                 719 DNSKEY
+                  38 !A
+                   4 !NS
+                   1 !PTR
+                  10 !TXT
+                1938 !AAAA
+                   1 !SRV
+                3385 !DS
+               13533 NXDOMAIN
+                   1 #CNAME
+[View: _bind (Cache: _bind)]
+++ ADB stats ++
+[View: default]
+                3067 Address hash table size
+               20360 Addresses in hash table
+                2039 Name hash table size
+               16181 Names in hash table
+[View: _bind]
+                1021 Address hash table size
+                1021 Name hash table size
+++ Socket I/O Statistics ++
+             4511917 UDP/IPv4 sockets opened
+             1541102 UDP/IPv6 sockets opened
+               33334 TCP/IPv4 sockets opened
+               28005 TCP/IPv6 sockets opened
+                   1 Raw sockets opened
+             4511905 UDP/IPv4 sockets closed
+             1541100 UDP/IPv6 sockets closed
+               44719 TCP/IPv4 sockets closed
+               28004 TCP/IPv6 sockets closed
+                1012 UDP/IPv4 socket bind failures
+                  54 UDP/IPv6 socket bind failures
+                  14 TCP/IPv4 socket connect failures
+                   2 TCP/IPv6 socket connect failures
+             4509002 UDP/IPv4 connections established
+             1540989 UDP/IPv6 connections established
+               33179 TCP/IPv4 connections established
+               27934 TCP/IPv6 connections established
+               11391 TCP/IPv4 connections accepted
+                   1 TCP/IPv6 connections accepted
+                 895 UDP/IPv4 recv errors
+                 353 UDP/IPv6 recv errors
+                  25 TCP/IPv4 recv errors
+                   1 TCP/IPv6 recv errors
+                  12 UDP/IPv4 sockets active
+                   2 UDP/IPv6 sockets active
+               11396 TCP/IPv4 sockets active
+                   3 TCP/IPv6 sockets active
+                   1 Raw sockets active
+++ Per Zone Query Statistics ++
+[speedrs.net]
+               60165 queries resulted in successful answer
+               68015 queries resulted in authoritative answer
+                7198 queries resulted in nxrrset
+                 652 queries resulted in NXDOMAIN
+               68015 UDP queries received
+[speedrs.com.br]
+             2209503 queries resulted in successful answer
+             7675625 queries resulted in authoritative answer
+             5463957 queries resulted in nxrrset
+                2165 queries resulted in NXDOMAIN
+             7675622 UDP queries received
+                   3 TCP queries received
+--- Statistics Dump --- (1564579081)
