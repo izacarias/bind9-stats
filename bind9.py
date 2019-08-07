@@ -110,14 +110,14 @@ if args.query and args.zone and args.measurement:
                 zone == str(args.zone) and \
                 item == str(args.measurement):
             content_out = content
-    print('"{0}"'.format(content_out))
+    print('{0}'.format(content_out))
 # Printing general Measurements (q and m are defined)
 elif args.query and args.measurement:
     for view, header, item, content in general_stats:
         if header == str(args.query) and \
                 item == str(args.measurement):
             content_out = content
-    print('"{0}"'.format(content_out))
+    print('{0}'.format(content_out))
 # Printing domains in JSON format (only d is defined)
 elif args.domains:
     domains = []
