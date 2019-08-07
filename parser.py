@@ -48,6 +48,7 @@ header = ''
 view = ''
 item = ''
 content = ''
+content_out = ''
 general_stats = []
 zone_list = []
 zone_stats = []
@@ -57,7 +58,7 @@ for line in fstat_read:
     # Section headers ( ++ HEADER ++ )
     match = re.search(r'^\+\+ ([\s\w\/]+) \+\+$', line)
     if match:
-        header = match.group(1)
+        header = match.group(1).replace('/', '')
         header = sanitize_string(header)
         view = ''
         item = ''
@@ -101,23 +102,22 @@ for line in fstat_read:
 
 fstat.close()
 
+content_out = 0
 # Printing Measurements for Zones (q, z and m are defined)
 if args.query and args.zone and args.measurement:
     for header, zone, item, content in zone_stats:
         if header == str(args.query) and \
                 zone == str(args.zone) and \
                 item == str(args.measurement):
-            print('"{0}"'.format(content))
-        else:
-            print('"0"')
+            content_out = content
+    print('"{0}"'.format(content_out))
 # Printing general Measurements (q and m are defined)
 elif args.query and args.measurement:
     for view, header, item, content in general_stats:
         if header == str(args.query) and \
                 item == str(args.measurement):
-            print('"{0}"'.format(content))
-        else:
-            print('"0"')
+            content_out = content
+    print('"{0}"'.format(content_out))
 # Printing domains in JSON format (only d is defined)
 elif args.domains:
     domains = []
