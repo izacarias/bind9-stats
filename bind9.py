@@ -27,8 +27,7 @@ args = parser.parse_args()
 if (args.domains and
     (args.query is not None or
      args.zone is not None or
-     args.measurement is not None or
-     args.trapper)):
+     args.measurement is not None)):
     parser.error(
         'The --domain (-d) option cannot be used with any other argument.')
 
